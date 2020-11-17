@@ -9,6 +9,11 @@ function App() {
         <h1 >
           Under Construction
         </h1>
+        <div>
+          <p>Phone: (704)-327-8081</p>
+          <p>Toll Free: 1(888)-928-3422</p>
+          <p>Fax: (704) 517-3249</p>
+        </div>
       </header>
     </div>
   );
