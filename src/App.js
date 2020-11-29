@@ -51,8 +51,8 @@ class App extends Component  {
   </Navbar.Collapse>
 </Navbar>
       <Switch>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/Contact' component={Contact} />
+              <Route exact path='/home' component={Home} />
+              <Route path='/Contact' component={Contact} />
                         {/* <Route render={function () {
                             return <p>Not found</p>
                         }} /> */}
