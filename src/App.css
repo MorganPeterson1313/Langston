@@ -1,8 +1,13 @@
-.App {
-  /* text-align: center; */
+.Home {
+  text-align: center;
+  margin-top: 10%;
+}
+.Contact{
+  text-align: center;
+  margin-top: 10%;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,6 +40,6 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
  

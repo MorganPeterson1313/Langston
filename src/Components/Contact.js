@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-
+import '../App.css';
 export class Contact extends Component {
     render() {
         return (
-            <div>
+            <div className= "Contact">
                 <h1>Contact</h1>
             <div>
               <p>Phone: (704)-317-8081</p>
