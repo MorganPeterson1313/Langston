@@ -9,6 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './Components/Contact';
 import { Switch, Route } from 'react-router-dom';
+import Home from './Components/Home';
 
 class App extends Component  {
   render(){
@@ -18,7 +19,7 @@ class App extends Component  {
        
       
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/home">
       <img
         alt="logo"
         src={MichaelLogo} 
@@ -50,16 +51,15 @@ class App extends Component  {
   </Navbar.Collapse>
 </Navbar>
       <Switch>
+              <Route exact path='/' component={Home} />
               <Route exact path='/Contact' component={Contact} />
-                        <Route render={function () {
+                        {/* <Route render={function () {
                             return <p>Not found</p>
-                        }} />
+                        }} /> */}
                    </Switch>
           <header className="App-header"/>
             
-            <h1 >
-              Under Construction
-            </h1>
+            
           
           
         
