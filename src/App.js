@@ -20,7 +20,7 @@ class App extends Component  {
        
       
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="/home">
+        <Navbar.Brand href="/">
       <img
         alt="logo"
         src={MichaelLogo} 
@@ -52,7 +52,7 @@ class App extends Component  {
   </Navbar.Collapse>
 </Navbar>
       <Switch>
-              <Route exact path='/home' component={Home} />
+              <Route exact path='/' component={Home} />
               <Route path='/Contact' component={Contact} />
               <Route path='/products' component={Products} />
                         {/* <Route render={function () {
