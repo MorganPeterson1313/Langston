@@ -28,30 +28,30 @@
     <title>React App</title>
   </head>
   <body>
-    <Form name="contact" method="POST" netlify netlify-honeypot="bot-field" hidden> 
-      <input type="hidden" name="form-name" value="contact"/>
-      <Form.Group controlId="formBasicEmail">
-          <Row>
-          <Form.Label>First Name</Form.Label>
-        <Form.Control type="text" name="first-name" />
-        <Form.Label>Last Name</Form.Label>
-        <Form.Control type="text"  name="last-name" />
-          </Row>
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" name="email" />
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-    
-      <Form.Group controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" rows={3} name="info"/>
-      </Form.Group>
-    </Form>
+    <Form name="contact" action="/contact"  method="POST" onSubmit="submit" netlify>  
+  <input type="hidden" name="form-name" value="contact"/>
+  <Form.Group controlId="formBasicEmail">
+      <Row>
+      <Form.Label>First Name</Form.Label>
+    <Form.Control type="text" name="first-name" placeholder="Enter First Name"  />
+    <Form.Label>Last Name</Form.Label>
+    <Form.Control type="text"  name="last-name"  placeholder="Enter Last Name" />
+      </Row>
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" name="email" placeholder="Enter email"  />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
 
-
-
+  <Form.Group controlId="exampleForm.ControlTextarea1">
+    <Form.Label>Message</Form.Label>
+    <Form.Control as="textarea" rows={3} name="info"/>
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
