@@ -16,6 +16,10 @@ export class Home extends Component {
             <div className= "Home">
                 
             <div style={{ display: "flex" , justifyContent: "center", marginBottom:"20%"}}>
+
+
+
+                
             <img
                  
                  alt="header Image"
