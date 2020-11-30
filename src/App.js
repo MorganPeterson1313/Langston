@@ -28,7 +28,7 @@ class App extends Component  {
         height="60"
         className="d-inline-block align-top"
       />{' '}
-      Michael Langston Peterson
+      M. Langston
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
