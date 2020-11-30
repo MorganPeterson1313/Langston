@@ -6,7 +6,8 @@ import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Michael from '../Michael.jpg';
-
+import Contact from './Contact';
+import { Switch, Route } from 'react-router-dom';
 
 
 export class Home extends Component {
@@ -21,9 +22,15 @@ export class Home extends Component {
     <Card.Text>
       One Stop Shopping for all your Services
     </Card.Text>
-    <Button variant="secondary">Contact Us</Button>
+    <Button variant="secondary" href = "/contact">Contact Us</Button>
   </Card.Body>
 </Card>
+
+<Switch>
+              
+              <Route path='/contact' component={Contact} />
+                        
+</Switch>
 </div>
             </div>
         )

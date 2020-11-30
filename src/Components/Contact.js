@@ -4,6 +4,8 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Michael from '../Michael.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Products from './Products';
+import { Switch, Route } from 'react-router-dom';
 export class Contact extends Component {
     render() {
         return (
@@ -21,9 +23,15 @@ export class Contact extends Component {
               <p>Fax: (704) 517-3249</p>
             </div>
     </Card.Text>
-    <Button variant="secondary">Products</Button>
+    <Button variant="secondary" href="/products" >Products</Button>
   </Card.Body>
 </Card>
+
+<Switch>
+              
+              <Route path='/products' component={Products} />
+                        
+</Switch>
 </div>
                 
                 
