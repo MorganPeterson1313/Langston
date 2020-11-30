@@ -24,29 +24,8 @@ export class Contact extends Component {
 				<div class="container">
 					<header class="major"></header>
     <div style={{alignContent: "center", margin: "2%"}}>
-					<form name= "contact" method="post" data-netlify="true" action="#">
-    {/* <InputGroup className="mb-3">
-  <InputGroup.Prepend>
-    <InputGroup.Text>First and last name</InputGroup.Text>
+					<form name= "contact" method="POST" data-netlify="true">
     
-  </InputGroup.Prepend>
-  
-  <FormControl />
-  
-  <FormControl />
-  <InputGroup.Prepend>
-  <InputGroup.Text>Email</InputGroup.Text>
-  <FormControl />
-  </InputGroup.Prepend>
-</InputGroup>
-<InputGroup>
-    <InputGroup.Prepend>
-      <InputGroup.Text>With textarea</InputGroup.Text>
-    </InputGroup.Prepend>
-
-    
-    <FormControl as="textarea" aria-label="With textarea" />
-  </InputGroup>*/}
   <Form> 
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
