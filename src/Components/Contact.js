@@ -32,12 +32,12 @@ export class Contact extends Component {
   <Form.Group controlId="formBasicEmail">
       <Row>
       <Form.Label>First Name</Form.Label>
-    <Form.Control type="text" placeholder="Enter First Name" name="name" />
+    <Form.Control type="text" name="name" placeholder="Enter First Name"  />
     <Form.Label>Last Name</Form.Label>
-    <Form.Control type="text" placeholder="Enter Last Name" name="name" />
+    <Form.Control type="text"  name="name"  placeholder="Enter Last Name" />
       </Row>
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" name="email" />
+    <Form.Control type="email" name="email" placeholder="Enter email"  />
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
     </Form.Text>
