@@ -6,7 +6,9 @@ import Michael from '../Michael.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Products from './Products';
 import { Switch, Route } from 'react-router-dom';
-import Form from 'react-bootstrap/Form'
+import InputGroup from  'react-bootstrap/InputGroup';
+import Form from  'react-bootstrap/Form';
+
 export class Contact extends Component {
     render() {
         return (
@@ -18,23 +20,59 @@ export class Contact extends Component {
   <Card.Body>
     <Card.Title>Get In touch</Card.Title>
     <Card.Text>
-    <div class="container">
+    <section id="footer">
+				<div class="container">
+					<header class="major"></header>
     <div style={{alignContent: "center", margin: "2%"}}>
 					<form name= "contact" method="post" data-netlify="true" action="#">
-						<div className="row gtr-uniform">
-							<div className="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-							<div className="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div className="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-							<div className="col-12">
-								<ul className="actions special">
-                                <Button variant="secondary" type="submit" >Send Message</Button>
-									{/* <li><input type="submit" value="Send Message" className="secondary" /></li> */}
-								</ul>
-							</div>
-						</div>
-					</form>
+    {/* <InputGroup className="mb-3">
+  <InputGroup.Prepend>
+    <InputGroup.Text>First and last name</InputGroup.Text>
+    
+  </InputGroup.Prepend>
+  
+  <FormControl />
+  
+  <FormControl />
+  <InputGroup.Prepend>
+  <InputGroup.Text>Email</InputGroup.Text>
+  <FormControl />
+  </InputGroup.Prepend>
+</InputGroup>
+<InputGroup>
+    <InputGroup.Prepend>
+      <InputGroup.Text>With textarea</InputGroup.Text>
+    </InputGroup.Prepend>
+
+    
+    <FormControl as="textarea" aria-label="With textarea" />
+  </InputGroup>*/}
+  <Form> 
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
+
+  <Form.Group controlId="exampleForm.ControlTextarea1">
+    <Form.Label>Message</Form.Label>
+    <Form.Control as="textarea" rows={3} />
+  </Form.Group>
+  <Form.Group controlId="formBasicCheckbox">
+    <Form.Check type="checkbox" label="Check me out" />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+                    
+                    
+                    </form>
 				</div>
                 </div>
+                </section>
     <div>
               <p>Phone: (704)-317-8081</p>
               <p>Toll Free: 1(888)-928-3422</p>
