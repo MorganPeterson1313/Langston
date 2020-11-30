@@ -32,9 +32,9 @@ export class Contact extends Component {
   <Form.Group controlId="formBasicEmail">
       <Row>
       <Form.Label>First Name</Form.Label>
-    <Form.Control type="text" placeholder="Enter First Name" name="first-name" />
+    <Form.Control type="text" placeholder="Enter First Name" name="name" />
     <Form.Label>Last Name</Form.Label>
-    <Form.Control type="text" placeholder="Enter Last Name" name="last-name" />
+    <Form.Control type="text" placeholder="Enter Last Name" name="name" />
       </Row>
     <Form.Label>Email address</Form.Label>
     <Form.Control type="email" placeholder="Enter email" name="email" />
@@ -45,7 +45,7 @@ export class Contact extends Component {
 
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows={3} name="info"/>
+    <Form.Control as="textarea" rows={3} name="message"/>
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit
