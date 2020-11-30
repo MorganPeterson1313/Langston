@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './Components/Contact';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Components/Home';
+import Products from './Components/Products';
 
 class App extends Component  {
   render(){
@@ -33,7 +34,7 @@ class App extends Component  {
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
       <Nav.Link href= "/Contact">Contact Us</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+      <Nav.Link href="/products">Featured Products</Nav.Link>
       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#Contact">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -53,6 +54,7 @@ class App extends Component  {
       <Switch>
               <Route exact path='/home' component={Home} />
               <Route path='/Contact' component={Contact} />
+              <Route path='/products' component={Products} />
                         {/* <Route render={function () {
                             return <p>Not found</p>
                         }} /> */}
