@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import Michael from '../Michael.jpg';
+import MichaelLogo from '../MichaelLogo.jpeg';
 import Contact from './Contact';
 import { Switch, Route } from 'react-router-dom';
 
@@ -26,7 +26,7 @@ export class Home extends Component {
                 
                 />
             <Card style={{ width: '25rem'}}>
-  <Card.Img variant="top" src={Michael} />
+  <Card.Img variant="top" src={MichaelLogo} />
   <Card.Body>
     <Card.Title>M. Langston</Card.Title>
     <Card.Text>
