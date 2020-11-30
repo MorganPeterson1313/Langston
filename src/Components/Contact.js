@@ -28,7 +28,7 @@ export class Contact extends Component {
 					
     
   <Form name="contact" action="/contact" data-netlify="true" method="POST" onSubmit="submit"> 
-  <input type="hidden" name="form-name" value="contact"/>
+  
   <Form.Group controlId="formBasicEmail">
       <Row>
       <Form.Label>First Name</Form.Label>
