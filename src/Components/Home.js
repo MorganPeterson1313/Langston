@@ -19,9 +19,9 @@ export class Home extends Component {
   <Card.Body>
     <Card.Title>M. Langston</Card.Title>
     <Card.Text>
-      One Stop Shop for all your Services
+      One Stop Shopping for all your Services
     </Card.Text>
-    <Button variant="secondary">Products</Button>
+    <Button variant="secondary">Contact Us</Button>
   </Card.Body>
 </Card>
 </div>
