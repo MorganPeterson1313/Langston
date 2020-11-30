@@ -61,6 +61,7 @@ export class Contact extends Component {
                 </div>
                 </section>
     <div>
+        <h1>Contact Us</h1>
               <p>Phone: (704)-317-8081</p>
               <p>Toll Free: 1(888)-928-3422</p>
               <p>Fax: (704) 517-3249</p>
