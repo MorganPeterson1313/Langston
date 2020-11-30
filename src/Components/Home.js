@@ -15,10 +15,7 @@ export class Home extends Component {
         return (
             <div className= "Home">
                 
-            <div style={{ display: "flex" , justifyContent: "center", marginBottom:"20%"}}>
-
-
-
+            <div style={{ display: "flex" , justifyContent: "center"}}>
                 
             <img
                  
@@ -46,6 +43,7 @@ export class Home extends Component {
                         
 </Switch>
 </div>
+
             </div>
         )
     }

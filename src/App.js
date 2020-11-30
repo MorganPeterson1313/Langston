@@ -1,6 +1,6 @@
 import MichaelLogo from './MichaelLogo.jpg';
 import React, { Component } from 'react';
-// import './App.css';
+import './App.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 // import Form from 'react-bootstrap/Form';
@@ -16,7 +16,7 @@ class App extends Component  {
   render(){
   return (
     
-      <div className="App">
+      <div className="App" style = {{"backgroundColor": "grey"}}>
        
       
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -51,7 +51,14 @@ class App extends Component  {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-      <Switch>
+      
+          
+            
+            
+          
+          
+                  
+<Switch>
               <Route exact path='/' component={Home} />
               <Route path='/Contact' component={Contact} />
               <Route path='/products' component={Products} />
@@ -59,12 +66,6 @@ class App extends Component  {
                             return <p>Not found</p>
                         }} /> */}
                    </Switch>
-          <header className="App-header"/>
-            
-            
-          
-          
-        
     </div>
   );
 }

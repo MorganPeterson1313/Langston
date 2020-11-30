@@ -12,9 +12,9 @@ import Form from  'react-bootstrap/Form';
 export class Contact extends Component {
     render() {
         return (
-            <div className= "Contact">
+            <div className= "Contact" >
                 
-                <div style={{ display: "flex" , justifyContent: "center", marginBottom:"20%"}}>
+                <div style={{ display: "flex" , justifyContent: "center"}}>
             <Card style={{ width: '30rem'}}>
   
   <Card.Body>
