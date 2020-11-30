@@ -25,7 +25,7 @@ export class Contact extends Component {
 				<div class="container">
 					<header class="major"></header>
     <div style={{alignContent: "center", margin: "2%"}}>
-					<form>
+					
     
   <Form name="contact" method="post" data-netlify="true" onSubmit="submit"> 
   <input type="hidden" name="form-name" value="contact"/>
@@ -53,7 +53,7 @@ export class Contact extends Component {
 </Form>
                     
                     
-                    </form>
+        
 				</div>
                 </div>
                 </section>
