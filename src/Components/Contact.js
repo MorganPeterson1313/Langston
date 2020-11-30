@@ -8,6 +8,7 @@ import Products from './Products';
 import { Switch, Route } from 'react-router-dom';
 import InputGroup from  'react-bootstrap/InputGroup';
 import Form from  'react-bootstrap/Form';
+import Row from  'react-bootstrap/Row';
 
 export class Contact extends Component {
     render() {
@@ -29,8 +30,14 @@ export class Contact extends Component {
   <Form name= "contact" method="post" data-netlify="true" onSubmit="submit"> 
   <input type="hidden" name="form-name" value="contact"/>
   <Form.Group controlId="formBasicEmail">
+      <Row>
+      <Form.Label>First Name</Form.Label>
+    <Form.Control type="text" placeholder="Enter First Name" name="first-name" />
+    <Form.Label>Last Name</Form.Label>
+    <Form.Control type="text" placeholder="Enter Last Name" name="last-name" />
+      </Row>
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Control type="email" placeholder="Enter email" name="email" />
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
     </Form.Text>
@@ -38,7 +45,7 @@ export class Contact extends Component {
 
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows={3} />
+    <Form.Control as="textarea" rows={3} name="info"/>
   </Form.Group>
   <Form.Group controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
