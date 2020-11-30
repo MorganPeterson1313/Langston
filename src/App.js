@@ -1,4 +1,4 @@
-import MichaelLogo from './MichaelLogo.jpeg';
+import MichaelLogo from './MichaelLogo.jpg';
 import React, { Component } from 'react';
 // import './App.css';
 import Navbar from 'react-bootstrap/Navbar';

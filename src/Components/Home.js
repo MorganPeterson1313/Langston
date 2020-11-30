@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import MichaelLogo from '../MichaelLogo.jpeg';
+import MichaelLogo from '../MichaelLogo.jpg';
 import Contact from './Contact';
 import { Switch, Route } from 'react-router-dom';
 
