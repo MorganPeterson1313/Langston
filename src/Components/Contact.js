@@ -27,7 +27,7 @@ export class Contact extends Component {
     <div style={{alignContent: "center", margin: "2%"}}>
 					
     
-  <Form name="contact2" action="/contact2" data-netlify="true" method="POST" onSubmit="submit" netlify> 
+  <Form name="contact2" action="/contact" data-netlify="true" method="POST" onSubmit="submit" netlify> 
   <input type="hidden" name="form-name" value="contact2"/>
   <Form.Group controlId="formBasicEmail">
       <Row>
