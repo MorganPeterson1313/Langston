@@ -27,8 +27,8 @@ export class Contact extends Component {
     <div style={{alignContent: "center", margin: "2%"}}>
 					
     
-  <Form name="contact2" action="/contact" data-netlify="true" method="POST" onSubmit="submit" netlify> 
-  <input type="hidden" name="form-name" value="contact2"/>
+  <Form name="contact3" action="/contact"  method="POST" onSubmit="submit"> 
+  <input type="hidden" name="form-name" value="contact3"/>
   <Form.Group controlId="formBasicEmail">
       <Row>
       <Form.Label>First Name</Form.Label>
@@ -45,7 +45,7 @@ export class Contact extends Component {
 
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows={3} name="info"/>
+    <Form.Control as="textarea" rows={3} name="message"/>
   </Form.Group>
   <Button variant="primary" type="submit">
     Submit
