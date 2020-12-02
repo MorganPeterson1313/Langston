@@ -21,6 +21,8 @@ class App extends Component  {
       
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="/">
+          <div style={{display:"flex"}}>
+            <div style={{margin:"5%"}}>
       <img
         alt="logo"
         src={MichaelLogo} 
@@ -28,7 +30,12 @@ class App extends Component  {
         height="60"
         className="d-inline-block align-top"
       />{' '}
+    </div>
+    <div style={{ alignSelf:"center"}}>
       M. Langston
+      </div>
+      </div>
+    
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
